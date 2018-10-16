@@ -1,0 +1,44 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Let's Play War!</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="start"></div>
+        <div id="message"></div>
+        <div id="board">
+            <div id="player1" class="players">
+                <div id="score"></div>
+                <div id="hand"></div>
+            </div>
+            <div id="player2" class="players">
+                <div id="score"></div>
+                <div id="hand"></div>
+            </div>
+            <div id="action">
+                <button id="btnBattle" type = "button" class="btn">Fight</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var suits = ["spades", "hearts", "clubs", "diams"];
+        var cardFace = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+        var deck = [];
+        var players = [[],[]];
+
+        var fightButton = document.querySelector("#btnBattle");
+        
+        //event listeners
+        fightButton.addEventListener('click', battle);
+
+        //functions
+        function battle() {
+            console.log('works');
+        }
+
+    </script>    
+</body>
+</html>
