@@ -34,7 +34,7 @@
        function battle() {
            if(timer){
                r--;
-               outputMessage("Rounds left " + r);
+               outputMessage("Rounds remaining " + r);
                if(r<1){
                    window.clearInterval(timer);
                }
@@ -80,11 +80,11 @@
            }
 
            if(card1.cardValue > card2.cardValue) {
-               outputMessage("hand 1 wins");
+               outputMessage("Player 1 WINS");
                players[0] = players[0].concat(pot);
            } 
            else if (card1.cardValue < card2.cardValue) {
-               outputMessage("hand 2 wins");
+               outputMessage("Player 2 WINS!");
                players[1] = players[1].concat(pot);
            }
            else {
