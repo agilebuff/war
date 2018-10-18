@@ -47,16 +47,17 @@
 .players {
     float: left;
     width: 49%;
-    min-height: 300px;
-    border: 1px solid #ddd;  
+    min-height: 250px;
+    border: 1px solid whitesmoke;  
 } 
 .score {
     font-size: 1.5em;
 }
+
 #message {
     font-size: 1.2em;
     color: white;
-    background-color: black;
+    background-color:navy;
     padding: 5px;
 }
 .btn {
@@ -66,6 +67,7 @@
     display: inline-block;
     text-align: center;
     text-shadow: 1px 1px #000;
+
 }
 #btnBattle {
     background-color: red;
